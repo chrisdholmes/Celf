@@ -14,6 +14,10 @@
 		D9ABF97C24FD804100C7142C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9ABF97B24FD804100C7142C /* Preview Assets.xcassets */; };
 		D9ABF97F24FD804100C7142C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9ABF97D24FD804100C7142C /* LaunchScreen.storyboard */; };
 		D9ABF98724FD87A500C7142C /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF98624FD87A500C7142C /* K.swift */; };
+		D9ABF98B24FDA30500C7142C /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF98A24FDA30500C7142C /* CustomButtonView.swift */; };
+		D9ABF98D24FDA36D00C7142C /* QuoteSpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF98C24FDA36D00C7142C /* QuoteSpeakerView.swift */; };
+		D9ABF99024FDB0B400C7142C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF98F24FDB0B400C7142C /* Quote.swift */; };
+		D9ABF99224FDB0C200C7142C /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF99124FDB0C200C7142C /* QuoteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D9ABF97E24FD804100C7142C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9ABF98024FD804100C7142C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9ABF98624FD87A500C7142C /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		D9ABF98A24FDA30500C7142C /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		D9ABF98C24FDA36D00C7142C /* QuoteSpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteSpeakerView.swift; sourceTree = "<group>"; };
+		D9ABF98F24FDB0B400C7142C /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		D9ABF99124FDB0C200C7142C /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +66,11 @@
 		D9ABF97124FD804000C7142C /* Celf */ = {
 			isa = PBXGroup;
 			children = (
+				D9ABF98E24FDA5F000C7142C /* model */,
+				D9ABF98924FD9EAE00C7142C /* view */,
+				D9ABF97624FD804000C7142C /* ContentView.swift */,
 				D9ABF97224FD804000C7142C /* AppDelegate.swift */,
 				D9ABF97424FD804000C7142C /* SceneDelegate.swift */,
-				D9ABF97624FD804000C7142C /* ContentView.swift */,
 				D9ABF97824FD804100C7142C /* Assets.xcassets */,
 				D9ABF98624FD87A500C7142C /* K.swift */,
 				D9ABF97D24FD804100C7142C /* LaunchScreen.storyboard */,
@@ -76,6 +86,24 @@
 				D9ABF97B24FD804100C7142C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9ABF98924FD9EAE00C7142C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D9ABF98A24FDA30500C7142C /* CustomButtonView.swift */,
+				D9ABF98C24FDA36D00C7142C /* QuoteSpeakerView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		D9ABF98E24FDA5F000C7142C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				D9ABF98F24FDB0B400C7142C /* Quote.swift */,
+				D9ABF99124FDB0C200C7142C /* QuoteManager.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9ABF98B24FDA30500C7142C /* CustomButtonView.swift in Sources */,
+				D9ABF98D24FDA36D00C7142C /* QuoteSpeakerView.swift in Sources */,
 				D9ABF97324FD804000C7142C /* AppDelegate.swift in Sources */,
 				D9ABF98724FD87A500C7142C /* K.swift in Sources */,
 				D9ABF97524FD804000C7142C /* SceneDelegate.swift in Sources */,
+				D9ABF99024FDB0B400C7142C /* Quote.swift in Sources */,
+				D9ABF99224FDB0C200C7142C /* QuoteManager.swift in Sources */,
 				D9ABF97724FD804000C7142C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

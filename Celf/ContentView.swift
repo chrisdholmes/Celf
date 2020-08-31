@@ -18,6 +18,9 @@ struct ContentView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height:300)
             
+            
+            QuoteSpeakerView(quote: "quote", speaker: "speaker")
+            
             Spacer()
             
             CustomButtonView(text: "Register"){
@@ -32,7 +35,14 @@ struct ContentView: View {
             
             
             Spacer()
-        }
+            
+            Button(action: {print("Forgot password")}){
+                Text("forgot password")
+                    .font(.body)
+                    .foregroundColor(.brandBlue)
+                    .underline()
+                }
+        }.edgesIgnoringSafeArea(.top)
  
     }
 }
@@ -45,16 +55,5 @@ struct ContentView_Previews: PreviewProvider {
 
 
 
-struct CustomButtonView: View {
-    let text: String
-    let action: () -> ()
-    var body: some View {
-        Button(action: action) {
-            Text(text)
-                .foregroundColor(Color.white)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-        }
-        .frame(width: 300, height: 75)
-        .background(Color.brandBlue)
-    }
-}
+
+
