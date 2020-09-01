@@ -8,6 +8,18 @@
 
 import SwiftUI
 
+
+/**
+     RegisterView file will allow a user to register to the Celf App
+       via FireBase.
+ 
+      TODO
+        - update to include creation of account via firebase
+        - Only make registration button available when username
+            meets certain criteria and isn't taken and passord verification
+            
+ 
+ */
 struct RegisterView: View {
     
     @State private var userName: String = ""
