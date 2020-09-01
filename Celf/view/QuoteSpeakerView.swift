@@ -9,16 +9,15 @@
 import SwiftUI
 
 struct QuoteSpeakerView: View {
-    let quote: String
-    let speaker: String
+    let quote: Quote
     
     var body: some View {
         
         VStack{
-            Text("\"" + quote + "\"")
+            Text("\"" + quote.quote + "\"")
                 .padding()
             
-            Text("- " + speaker)
+            Text("- " + quote.speaker)
                 .padding()
         }
     }
@@ -26,8 +25,6 @@ struct QuoteSpeakerView: View {
 
 struct QuoteSpeakerView_Previews: PreviewProvider {
     static var previews: some View {
-        QuoteSpeakerView(quote:
-            "Education is the passport to the Future",
-            speaker: "Malcolm X")
+        QuoteSpeakerView(quote: Quote(speaker: "Malcolm X",quote: "Education is the passport to the Future"))
     }
 }
