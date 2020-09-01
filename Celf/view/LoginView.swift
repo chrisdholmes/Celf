@@ -8,6 +8,18 @@
 
 import SwiftUI
 
+/**
+    LoginView  file will allow a user to login to the Celf App
+      via FireBase.
+
+     TODO
+       - update to include account login via firebase
+       - only allow login button to be available once all fields are done
+       - throw error is log in fails - such as bad password - no internet etc
+ 
+
+*/
+
 struct LoginView: View {
     @State private var userName: String = ""
     @State private var password: String = ""
