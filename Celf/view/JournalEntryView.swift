@@ -13,17 +13,20 @@ struct JournalEntryView: View {
     var bodyText: String
     var body: some View {
         
-       
+     
             VStack(alignment: .leading){
+        
                 Text(title)
                     .font(.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom)
                 
+                ScrollView{
                 
                 Text(bodyText)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            }.frame(minHeight: 200, maxHeight: 300)
+                }.padding(1)
+            }.frame(height:200)
+        
     
     }
     
