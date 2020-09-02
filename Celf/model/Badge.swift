@@ -16,4 +16,6 @@ import Foundation
  */
 struct Badge{
     let badgeName: String
+    let date: String
+    let memo: String
 }
