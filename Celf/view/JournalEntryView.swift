@@ -23,7 +23,7 @@ struct JournalEntryView: View {
                 
                 Text(bodyText)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-            }.frame(width: 350, height: 200)
+            }.frame(minHeight: 200, maxHeight: 300)
     
     }
     
