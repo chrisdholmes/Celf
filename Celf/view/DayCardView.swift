@@ -23,7 +23,10 @@
 
 import SwiftUI
 
-struct DayEventView: View {
+struct DayCardView: View {
+    
+    @State private var bodyText: String?
+    
     var body: some View {
         
         VStack{
@@ -31,8 +34,7 @@ struct DayEventView: View {
                 VStack{
                     // date
                     Text("00/00/00")
-                    //time
-                    Text("00:00:00 MM")
+
                 }.padding()
                 
                 Spacer()
@@ -76,19 +78,15 @@ struct DayEventView: View {
 
 func getBodyText() -> String
 {
-    var bodyText = "I made one million dollars today.\n"
+    let bodyText = "I made one million dollars today.\n"
     
-    for _ in 1...10{
-        bodyText = bodyText + bodyText
-    }
-    print(bodyText)
     
     return bodyText
 }
 
 struct DayEventView_Previews: PreviewProvider {
     static var previews: some View {
-        DayEventView()
+        DayCardView()
     }
 }
 
