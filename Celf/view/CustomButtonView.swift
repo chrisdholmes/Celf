@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// MARK: - CustomButtonView
 struct CustomButtonView: View {
     let text: String
     let action: () -> ()
@@ -26,6 +27,7 @@ struct CustomButtonView: View {
     }
 }
 
+// MARK: - CustomButtonPreview
 struct CustomButtonView_Previews: PreviewProvider {
     static var previews: some View {
         CustomButtonView(text: "example"){
