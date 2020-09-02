@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0D0C2750488461F9718D7D37 /* Pods_Celf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D568A486DBFF5170AFE0E1 /* Pods_Celf.framework */; };
-		D924145424FEB1C200434274 /* DayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145324FEB1C200434274 /* DayEventView.swift */; };
+		D924145424FEB1C200434274 /* DayCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145324FEB1C200434274 /* DayCardView.swift */; };
 		D924145624FEDC5C00434274 /* BadgeInDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145524FEDC5C00434274 /* BadgeInDayView.swift */; };
 		D924145824FEDCB700434274 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145724FEDCB700434274 /* JournalEntryView.swift */; };
+		D924145A24FF26B300434274 /* DayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145924FF26B300434274 /* DayCard.swift */; };
+		D924145C24FF434800434274 /* DayCardViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145B24FF434800434274 /* DayCardViewManager.swift */; };
+		D924145E24FF437D00434274 /* EventCardViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145D24FF437D00434274 /* EventCardViewManager.swift */; };
+		D924146024FF441500434274 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145F24FF441500434274 /* JournalEntry.swift */; };
+		D924146224FF44E400434274 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924146124FF44E400434274 /* Badge.swift */; };
 		D98690FC24FE09D80073CC1B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98690FB24FE09D80073CC1B /* RegisterView.swift */; };
 		D98690FE24FE128E0073CC1B /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98690FD24FE128E0073CC1B /* BottomBarView.swift */; };
 		D9A6D6CD24FEB06A0013A0F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */; };
@@ -32,9 +37,14 @@
 		0DF915B404DFE076177D92AA /* Pods-Celf.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celf.release.xcconfig"; path = "Target Support Files/Pods-Celf/Pods-Celf.release.xcconfig"; sourceTree = "<group>"; };
 		73F863814DBCB98B4DF21DAC /* Pods-Celf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Celf.debug.xcconfig"; path = "Target Support Files/Pods-Celf/Pods-Celf.debug.xcconfig"; sourceTree = "<group>"; };
 		79D568A486DBFF5170AFE0E1 /* Pods_Celf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Celf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D924145324FEB1C200434274 /* DayEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayEventView.swift; sourceTree = "<group>"; };
+		D924145324FEB1C200434274 /* DayCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCardView.swift; sourceTree = "<group>"; };
 		D924145524FEDC5C00434274 /* BadgeInDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeInDayView.swift; sourceTree = "<group>"; };
 		D924145724FEDCB700434274 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		D924145924FF26B300434274 /* DayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCard.swift; sourceTree = "<group>"; };
+		D924145B24FF434800434274 /* DayCardViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCardViewManager.swift; sourceTree = "<group>"; };
+		D924145D24FF437D00434274 /* EventCardViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardViewManager.swift; sourceTree = "<group>"; };
+		D924145F24FF441500434274 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
+		D924146124FF44E400434274 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		D98690FB24FE09D80073CC1B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D98690FD24FE128E0073CC1B /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -135,7 +145,7 @@
 				D98690FB24FE09D80073CC1B /* RegisterView.swift */,
 				D98690FD24FE128E0073CC1B /* BottomBarView.swift */,
 				D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */,
-				D924145324FEB1C200434274 /* DayEventView.swift */,
+				D924145324FEB1C200434274 /* DayCardView.swift */,
 				D924145524FEDC5C00434274 /* BadgeInDayView.swift */,
 				D924145724FEDCB700434274 /* JournalEntryView.swift */,
 			);
@@ -147,6 +157,11 @@
 			children = (
 				D9ABF98F24FDB0B400C7142C /* Quote.swift */,
 				D9ABF99124FDB0C200C7142C /* QuoteManager.swift */,
+				D924145B24FF434800434274 /* DayCardViewManager.swift */,
+				D924145D24FF437D00434274 /* EventCardViewManager.swift */,
+				D924145924FF26B300434274 /* DayCard.swift */,
+				D924145F24FF441500434274 /* JournalEntry.swift */,
+				D924146124FF44E400434274 /* Badge.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -267,19 +282,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				D924145624FEDC5C00434274 /* BadgeInDayView.swift in Sources */,
+				D924146224FF44E400434274 /* Badge.swift in Sources */,
 				D9ABF98B24FDA30500C7142C /* CustomButtonView.swift in Sources */,
+				D924145C24FF434800434274 /* DayCardViewManager.swift in Sources */,
 				D98690FC24FE09D80073CC1B /* RegisterView.swift in Sources */,
 				D9ABF98D24FDA36D00C7142C /* QuoteSpeakerView.swift in Sources */,
 				D9ABF97324FD804000C7142C /* AppDelegate.swift in Sources */,
+				D924146024FF441500434274 /* JournalEntry.swift in Sources */,
 				D9ABF99424FDC9FA00C7142C /* LoginView.swift in Sources */,
 				D924145824FEDCB700434274 /* JournalEntryView.swift in Sources */,
 				D98690FE24FE128E0073CC1B /* BottomBarView.swift in Sources */,
 				D9ABF98724FD87A500C7142C /* K.swift in Sources */,
+				D924145A24FF26B300434274 /* DayCard.swift in Sources */,
 				D9ABF97524FD804000C7142C /* SceneDelegate.swift in Sources */,
 				D9ABF99024FDB0B400C7142C /* Quote.swift in Sources */,
 				D9A6D6CD24FEB06A0013A0F9 /* HomeView.swift in Sources */,
 				D9ABF99224FDB0C200C7142C /* QuoteManager.swift in Sources */,
-				D924145424FEB1C200434274 /* DayEventView.swift in Sources */,
+				D924145E24FF437D00434274 /* EventCardViewManager.swift in Sources */,
+				D924145424FEB1C200434274 /* DayCardView.swift in Sources */,
 				D9ABF97724FD804000C7142C /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -35,7 +35,7 @@ struct BottomBarView: View {
                         .font(.system(size: 32))
                      Text("Review")
              }
-           }
+        }
 
     }
 }
