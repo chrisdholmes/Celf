@@ -13,7 +13,7 @@ import Foundation
    
  */
 
-class DayCard{
+struct DayCard{
     // stars in an int based on the star rating the
     // user providers for their day (1 - 5)
     var stars: Int = 0
