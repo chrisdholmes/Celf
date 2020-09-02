@@ -21,6 +21,7 @@ struct HomeView: View {
     var body: some View {
         List{
             DayCardView()
+            EventCardView()
         }
     }
 }
