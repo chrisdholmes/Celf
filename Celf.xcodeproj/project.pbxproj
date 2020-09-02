@@ -16,6 +16,7 @@
 		D924145E24FF437D00434274 /* EventCardViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145D24FF437D00434274 /* EventCardViewManager.swift */; };
 		D924146024FF441500434274 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145F24FF441500434274 /* JournalEntry.swift */; };
 		D924146224FF44E400434274 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924146124FF44E400434274 /* Badge.swift */; };
+		D9867CE124FF6AE80085765E /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9867CE024FF6AE80085765E /* EventCardView.swift */; };
 		D98690FC24FE09D80073CC1B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98690FB24FE09D80073CC1B /* RegisterView.swift */; };
 		D98690FE24FE128E0073CC1B /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98690FD24FE128E0073CC1B /* BottomBarView.swift */; };
 		D9A6D6CD24FEB06A0013A0F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */; };
@@ -45,6 +46,7 @@
 		D924145D24FF437D00434274 /* EventCardViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardViewManager.swift; sourceTree = "<group>"; };
 		D924145F24FF441500434274 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		D924146124FF44E400434274 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		D9867CE024FF6AE80085765E /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		D98690FB24FE09D80073CC1B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D98690FD24FE128E0073CC1B /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				D924145324FEB1C200434274 /* DayCardView.swift */,
 				D924145524FEDC5C00434274 /* BadgeInDayView.swift */,
 				D924145724FEDCB700434274 /* JournalEntryView.swift */,
+				D9867CE024FF6AE80085765E /* EventCardView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9867CE124FF6AE80085765E /* EventCardView.swift in Sources */,
 				D924145624FEDC5C00434274 /* BadgeInDayView.swift in Sources */,
 				D924146224FF44E400434274 /* Badge.swift in Sources */,
 				D9ABF98B24FDA30500C7142C /* CustomButtonView.swift in Sources */,
