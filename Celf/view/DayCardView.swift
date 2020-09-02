@@ -79,7 +79,14 @@ struct DayCardView: View {
 
 func getBodyText() -> String
 {
-    let bodyText = "I made one million dollars today.\n"
+    var bodyText = "I made one million dollars today.\n"
+    
+    bodyText += bodyText
+    bodyText += bodyText
+    bodyText += bodyText
+    bodyText += bodyText
+    bodyText += bodyText
+
     
     
     return bodyText
