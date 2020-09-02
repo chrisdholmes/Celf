@@ -34,8 +34,7 @@ struct DayCardView: View {
                 VStack{
                     // date
                     Text("00/00/00")
-
-                }.padding()
+                }
                 
                 Spacer()
                 HStack{
@@ -47,8 +46,8 @@ struct DayCardView: View {
                     Image(systemName: "star.fill")
                     Image(systemName: "star.fill")
                     Image(systemName: "star.fill")
-                }.padding()
-            }.frame(width: 375, height: 40)
+                }
+            }
             
             Divider()
             //symbols won of the day - updated based on events
@@ -65,10 +64,12 @@ struct DayCardView: View {
             
             Divider()
             //Journal Entry
-            ScrollView {
-                JournalEntryView(title: "Event - Title", bodyText:getBodyText())
-            }
+       
+            JournalEntryView(title: "Event - Title", bodyText:getBodyText())
+       
         }
+        .padding()
+        .border(Color.black)
         
         
         
