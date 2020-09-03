@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+/**
+ 
+  JournalEntryView is a resuable view that is designed to display in
+   all EventCardViews and DayCardViews.
+ */
+
 struct JournalEntryView: View {
     var title: String
     var bodyText: String
