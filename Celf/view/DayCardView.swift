@@ -25,7 +25,7 @@ import SwiftUI
 
 struct DayCardView: View {
     
-    @State private var bodyText: String?
+    var dayCard: DayCard
     
     var body: some View {
         
@@ -33,7 +33,7 @@ struct DayCardView: View {
             HStack{
                 VStack{
                     // date
-                    Text("00/00/00")
+                    Text(dayCard.date)
                 }
                 
                 Spacer()
@@ -51,22 +51,23 @@ struct DayCardView: View {
             
             Divider()
             //symbols won of the day - updated based on events
-            HStack{
-                //journal badge
-                BadgeInDayView(badgeName: "book.fill")
-                // talk to a friend/family badge
-                BadgeInDayView(badgeName: "person.2.fill")
-                // watch inspirational video badge
-                BadgeInDayView(badgeName: "play.fill")
-                BadgeInDayView(badgeName: "leaf.arrow.circlepath")
-                
+            
+            ScrollView(.horizontal)
+            {
+                HStack{
+                    //journal badge
+                    ForEach(0..<dayCard.badges.count){ badge in
+                        BadgeInDayView(badge: self.dayCard.badges[badge])
+                    }
+                    
+                }
             }
             
             Divider()
             //Journal Entry
-       
-            JournalEntryView(title: "Event - Title", bodyText:getBodyText())
-       
+            
+            JournalEntryView(title: dayCard.entry.title, bodyText: dayCard.entry.bodyText)
+            
         }
         .padding()
         .border(Color.black)
@@ -77,24 +78,11 @@ struct DayCardView: View {
 }
 
 
-func getBodyText() -> String
-{
-    var bodyText = "I made one million dollars today.\n"
-    
-    bodyText += bodyText
-    bodyText += bodyText
-    bodyText += bodyText
-    bodyText += bodyText
-    bodyText += bodyText
-
-    
-    
-    return bodyText
-}
-
 struct DayEventView_Previews: PreviewProvider {
     static var previews: some View {
-        DayCardView()
+        
+        
+        DayCardView(dayCard: DayCard())
     }
 }
 
