@@ -7,45 +7,48 @@
 //
 
 import SwiftUI
-
+/**
+   EventCardView displays an event. It displays the event in a card
+    that contains the date/time, category and journal entry for the event.
+    Each event contains these three items.  The EventCardView
+    requires an eventCard that does not contain any null values.
+ */
 struct EventCardView: View {
+    
+    var eventCard: EventCard
+    
     var body: some View {
         
         VStack{
             HStack {
                 VStack{
-                    Text("00/00/00")
-                    Text("00:00:00 MM")
+                    Text(self.eventCard.date)
+                    Text(self.eventCard.time)
                 }
                 
                 Spacer()
                 HStack{
-                    Image(systemName: "square.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 30, height: 30)
-                        .padding(5)
-                    Text("Category")
-                        .font(.system(size: 20))
-                        .padding(5)
+                    BadgeInDayView(badge: self.eventCard.badge)
                 }
-                .border(Color.black)
-                
+
             }
             
             Divider()
             
-            JournalEntryView(title: "Category", bodyText: "I thought about so and so and so")
+            JournalEntryView(
+                title: self.eventCard.category,
+                bodyText: self.eventCard.entry.bodyText)
+            
         }
         .padding()
         .border(Color.black, width: 1)
-        
-        
     }
 }
 
 struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
-        EventCardView()
+        
+        
+        EventCardView(eventCard: EventCard(category: "Meditation"))
     }
 }
