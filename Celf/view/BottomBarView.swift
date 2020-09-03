@@ -14,7 +14,7 @@
 import SwiftUI
 
 struct BottomBarView: View {
-       @ObservedObject private var eventCardViewManager = EventCardViewManager()
+       @ObservedObject private var cardViewManager = CardViewManager()
     
     var body: some View {
         TabView {
@@ -29,13 +29,13 @@ struct BottomBarView: View {
                 print("Update Tab Selected")
             }
             
-            HomeView(eventCards: eventCardViewManager.eventCards)
+            HomeView(eventCards: cardViewManager.eventCards)
                 .tabItem {
                     Image(systemName: "house.fill")
                         .font(.system(size: 32))
                     Text("Home")
             }.onAppear {
-                self.eventCardViewManager.fetchData()
+                self.cardViewManager.fetchData()
             }
             
             List{
