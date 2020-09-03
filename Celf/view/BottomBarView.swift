@@ -8,35 +8,53 @@
 
 /**
  
-  The BottomBarView contains three SF Symbols each representing a different view for the user. The user will be presented with a Update, Event, Home, and Review options. Each option 
+ The BottomBarView contains three SF Symbols each representing a different view for the user. The user will be presented with a Update, Event, Home, and Review options. Each option 
  
  */
 import SwiftUI
 
 struct BottomBarView: View {
+       @ObservedObject private var eventCardViewManager = EventCardViewManager()
+    
     var body: some View {
-           TabView {
-             Text("Update Screen")
-                 .tabItem {
-                     Image(systemName: "plus.square.fill")
-                        .font(.system(size: 32))
-                     Text("Event")
-             }
+        TabView {
+            List{
+                Text("Update Screen")
+            }
+            .tabItem {
+                Image(systemName: "plus.square.fill")
+                    .font(.system(size: 32))
+                Text("Event")
+            }.onTapGesture {
+                print("Update Tab Selected")
+            }
             
-            HomeView()
-                 .tabItem {
-                     Image(systemName: "house.fill")
+            HomeView(eventCards: eventCardViewManager.eventCards)
+                .tabItem {
+                    Image(systemName: "house.fill")
                         .font(.system(size: 32))
                     Text("Home")
-             }
-             Text("History Screen")
-                 .tabItem {
-                     Image(systemName: "gobackward")
-                        .font(.system(size: 32))
-                     Text("Review")
-             }
+            }.onAppear {
+                self.eventCardViewManager.fetchData()
+            }
+            
+            List{
+                Text("History Screen")
+            }
+            .tabItem {
+                Image(systemName: "gobackward")
+                    .font(.system(size: 32))
+                Text("Review")
+            }.onTapGesture {
+                print("History Tab Selected")
+            }
+            
+        }.onAppear{
+            print("BottomBarView appeared")
+        }.onDisappear{
+            print("BottomBarView disappeared")
         }
-
+        
     }
 }
 
