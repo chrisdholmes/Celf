@@ -9,9 +9,9 @@
 import Foundation
 
 struct JournalEntry{
-    var title: String?
-    var bodyText: String?
-    var date: String?
+    var title: String = ""
+    var bodyText: String = ""
+
     
     /**
      Journal Entry may need limits to the title - character limits for the
