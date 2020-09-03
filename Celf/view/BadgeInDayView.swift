@@ -9,18 +9,21 @@
 import SwiftUI
 
 struct BadgeInDayView: View {
-    var badgeName: String
+    var badge: Badge
     
     var body: some View {
-        Image(systemName: badgeName)
-            .padding(.horizontal, 5)
+        Image(systemName: badge.imageName)
+            .padding(10)
             .font(.system(size: 32))
+            .border(badge.colorName, width: 3.0)
+            .foregroundColor(Color.white)
+            .background(badge.colorName)
         
     }
 }
 
 struct BadgeInDayView_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeInDayView(badgeName: "square")
+        BadgeInDayView(badge: Badge(category: K.conquer))
     }
 }
