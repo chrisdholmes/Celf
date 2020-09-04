@@ -37,10 +37,3 @@ struct JournalEntryView: View {
     }
     
 }
-
-
-struct JournalEntryView_Previews: PreviewProvider {
-    static var previews: some View {
-        JournalEntryView(title: "Event - Title", bodyText: "I made a million dollar today baby.")
-    }
-}
