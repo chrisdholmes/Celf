@@ -18,23 +18,21 @@ struct BottomBarView: View {
     
     var body: some View {
         TabView {
-            List{
-                Text("Update Screen")
-            }
+            UpdateView()
             .tabItem {
                 Image(systemName: "plus.square.fill")
                     .font(.system(size: 32))
                 Text("Event")
-            }.onTapGesture {
-                print("Update Tab Selected")
-            }
+            }.navigationBarTitle("Update")
             
             HomeView(eventCards: cardViewManager.eventCards)
                 .tabItem {
                     Image(systemName: "house.fill")
                         .font(.system(size: 32))
                     Text("Home")
-            }.onAppear {
+            }
+            .navigationBarTitle("Home")
+            .onAppear {
                 self.cardViewManager.fetchData()
             }
             
@@ -45,14 +43,8 @@ struct BottomBarView: View {
                 Image(systemName: "gobackward")
                     .font(.system(size: 32))
                 Text("Review")
-            }.onTapGesture {
-                print("History Tab Selected")
-            }
+            }.navigationBarTitle("History")
             
-        }.onAppear{
-            print("BottomBarView appeared")
-        }.onDisappear{
-            print("BottomBarView disappeared")
         }
         
     }
