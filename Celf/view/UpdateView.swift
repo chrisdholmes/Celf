@@ -16,30 +16,36 @@ import SwiftUI
 
 struct UpdateView: View {
     
-    private let colors = K.colorArray
-    private let cards = K.cardArray
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false)
-        {
-            HStack{
-                ForEach(0 ..< cards.count){i in
-                    Button(action: {print(self.cards[i])}) {
-                        Text(self.cards[i])
-                            .foregroundColor(Color.white)
-                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                            .fontWeight(.bold)
-                            .padding()
-                            .frame(width: 300, height: 250)
-                            .background( RoundedRectangle(cornerRadius: 20)
-                            )
+        VStack {
+            
+            
+            ScrollView(.horizontal,showsIndicators: false){
+                HStack {
+                    ForEach(K.badgeArray){ badge in
+                        
+                        NavigationLink(destination: EventCardEntryView(category: badge.category)){
+                            BadgeInUpdateView(badge: badge)
+                        }
+                        
+                    }
+                }
+            }
+            Divider().hidden()
+            
+            ScrollView(.horizontal,showsIndicators: false){
+                HStack {
+                    ForEach(K.distortionBadges){ badge in
+                        NavigationLink(destination: EventCardEntryView(category: badge.category)){
+                            DistortionInUpdateView(badge: badge)
+                        }.border(Color.black)
+                        
                     }
                 }
             }
         }
-        
     }
-    
 }
 
 
@@ -48,3 +54,4 @@ struct UpdateView_Previews: PreviewProvider {
         UpdateView()
     }
 }
+
