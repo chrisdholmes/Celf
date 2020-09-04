@@ -38,8 +38,8 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     
-    static let eventCardViewManager = CardViewManager()
-    static let eventCards = eventCardViewManager.mockEventCards()
+    static let cardViewManager = CardViewManager()
+    static let eventCards = cardViewManager.mockData()
     
     static var previews: some View {
         HomeView(eventCards: eventCards)
