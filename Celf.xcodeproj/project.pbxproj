@@ -16,10 +16,14 @@
 		D924146024FF441500434274 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924145F24FF441500434274 /* JournalEntry.swift */; };
 		D924146224FF44E400434274 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D924146124FF44E400434274 /* Badge.swift */; };
 		D9361BEA25000E8300383509 /* EventCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9361BE925000E8300383509 /* EventCard.swift */; };
+		D94558FA2500B29700222EF5 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94558F92500B29700222EF5 /* UpdateView.swift */; };
 		D9867CE124FF6AE80085765E /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9867CE024FF6AE80085765E /* EventCardView.swift */; };
 		D98690FC24FE09D80073CC1B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98690FB24FE09D80073CC1B /* RegisterView.swift */; };
 		D98690FE24FE128E0073CC1B /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98690FD24FE128E0073CC1B /* BottomBarView.swift */; };
 		D98E4A9B25001FCC00A1482A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E4A9A25001FCC00A1482A /* Card.swift */; };
+		D98E4A9D2500AE1F00A1482A /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98E4A9C2500AE1F00A1482A /* CardData.swift */; };
+		D99F98E22502A42B0054A998 /* DistortionInUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F98E12502A42B0054A998 /* DistortionInUpdateView.swift */; };
+		D99F98E42502A9AD0054A998 /* EventCardEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99F98E32502A9AD0054A998 /* EventCardEntryView.swift */; };
 		D9A6D6CD24FEB06A0013A0F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */; };
 		D9ABF97324FD804000C7142C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF97224FD804000C7142C /* AppDelegate.swift */; };
 		D9ABF97524FD804000C7142C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF97424FD804000C7142C /* SceneDelegate.swift */; };
@@ -33,6 +37,7 @@
 		D9ABF99024FDB0B400C7142C /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF98F24FDB0B400C7142C /* Quote.swift */; };
 		D9ABF99224FDB0C200C7142C /* QuoteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF99124FDB0C200C7142C /* QuoteManager.swift */; };
 		D9ABF99424FDC9FA00C7142C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ABF99324FDC9FA00C7142C /* LoginView.swift */; };
+		D9C056622501804B00FE721C /* BadgeInUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C056612501804B00FE721C /* BadgeInUpdateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +52,14 @@
 		D924145F24FF441500434274 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		D924146124FF44E400434274 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		D9361BE925000E8300383509 /* EventCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCard.swift; sourceTree = "<group>"; };
+		D94558F92500B29700222EF5 /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
 		D9867CE024FF6AE80085765E /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		D98690FB24FE09D80073CC1B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		D98690FD24FE128E0073CC1B /* BottomBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		D98E4A9A25001FCC00A1482A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		D98E4A9C2500AE1F00A1482A /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		D99F98E12502A42B0054A998 /* DistortionInUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistortionInUpdateView.swift; sourceTree = "<group>"; };
+		D99F98E32502A9AD0054A998 /* EventCardEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardEntryView.swift; sourceTree = "<group>"; };
 		D9A6D6CC24FEB06A0013A0F9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D9ABF96F24FD804000C7142C /* Celf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Celf.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9ABF97224FD804000C7142C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +75,7 @@
 		D9ABF98F24FDB0B400C7142C /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		D9ABF99124FDB0C200C7142C /* QuoteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteManager.swift; sourceTree = "<group>"; };
 		D9ABF99324FDC9FA00C7142C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D9C056612501804B00FE721C /* BadgeInUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeInUpdateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +130,8 @@
 			children = (
 				D9ABF98E24FDA5F000C7142C /* model */,
 				D9ABF98924FD9EAE00C7142C /* view */,
-				D9ABF97224FD804000C7142C /* AppDelegate.swift */,
 				D9ABF97424FD804000C7142C /* SceneDelegate.swift */,
+				D9ABF97224FD804000C7142C /* AppDelegate.swift */,
 				D9ABF97824FD804100C7142C /* Assets.xcassets */,
 				D9ABF98624FD87A500C7142C /* K.swift */,
 				D9ABF97D24FD804100C7142C /* LaunchScreen.storyboard */,
@@ -153,6 +163,10 @@
 				D924145524FEDC5C00434274 /* BadgeInDayView.swift */,
 				D924145724FEDCB700434274 /* JournalEntryView.swift */,
 				D9867CE024FF6AE80085765E /* EventCardView.swift */,
+				D94558F92500B29700222EF5 /* UpdateView.swift */,
+				D9C056612501804B00FE721C /* BadgeInUpdateView.swift */,
+				D99F98E12502A42B0054A998 /* DistortionInUpdateView.swift */,
+				D99F98E32502A9AD0054A998 /* EventCardEntryView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -168,6 +182,7 @@
 				D924146124FF44E400434274 /* Badge.swift */,
 				D9361BE925000E8300383509 /* EventCard.swift */,
 				D98E4A9A25001FCC00A1482A /* Card.swift */,
+				D98E4A9C2500AE1F00A1482A /* CardData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -288,25 +303,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9867CE124FF6AE80085765E /* EventCardView.swift in Sources */,
+				D94558FA2500B29700222EF5 /* UpdateView.swift in Sources */,
 				D924145624FEDC5C00434274 /* BadgeInDayView.swift in Sources */,
 				D924146224FF44E400434274 /* Badge.swift in Sources */,
+				D98E4A9D2500AE1F00A1482A /* CardData.swift in Sources */,
 				D9ABF98B24FDA30500C7142C /* CustomButtonView.swift in Sources */,
 				D98690FC24FE09D80073CC1B /* RegisterView.swift in Sources */,
 				D9ABF98D24FDA36D00C7142C /* QuoteSpeakerView.swift in Sources */,
 				D9ABF97324FD804000C7142C /* AppDelegate.swift in Sources */,
 				D924146024FF441500434274 /* JournalEntry.swift in Sources */,
 				D9ABF99424FDC9FA00C7142C /* LoginView.swift in Sources */,
+				D99F98E22502A42B0054A998 /* DistortionInUpdateView.swift in Sources */,
 				D924145824FEDCB700434274 /* JournalEntryView.swift in Sources */,
 				D98690FE24FE128E0073CC1B /* BottomBarView.swift in Sources */,
 				D9ABF98724FD87A500C7142C /* K.swift in Sources */,
 				D924145A24FF26B300434274 /* DayCard.swift in Sources */,
 				D9361BEA25000E8300383509 /* EventCard.swift in Sources */,
+				D99F98E42502A9AD0054A998 /* EventCardEntryView.swift in Sources */,
 				D9ABF97524FD804000C7142C /* SceneDelegate.swift in Sources */,
 				D9ABF99024FDB0B400C7142C /* Quote.swift in Sources */,
 				D9A6D6CD24FEB06A0013A0F9 /* HomeView.swift in Sources */,
 				D98E4A9B25001FCC00A1482A /* Card.swift in Sources */,
 				D9ABF99224FDB0C200C7142C /* QuoteManager.swift in Sources */,
 				D924145E24FF437D00434274 /* CardViewManager.swift in Sources */,
+				D9C056622501804B00FE721C /* BadgeInUpdateView.swift in Sources */,
 				D924145424FEB1C200434274 /* DayCardView.swift in Sources */,
 				D9ABF97724FD804000C7142C /* WelcomeView.swift in Sources */,
 			);
@@ -450,6 +470,7 @@
 				DEVELOPMENT_TEAM = U6F9RV8537;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Celf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +492,7 @@
 				DEVELOPMENT_TEAM = U6F9RV8537;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Celf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
