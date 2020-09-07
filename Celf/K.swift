@@ -29,6 +29,12 @@ extension Date{
         
         return formatter.string(from: today)
     }
+    
+    static var dayOfWeek: String{
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE"
+        return formatter.string(from: today)
+    }
 }
 
 //MARK: - Colors
@@ -68,11 +74,11 @@ struct K{
         Color.conquerYellow
     ]
     
-    static var badgeArray: [Badge] {
+    static var badgeArray: [BadgeCard] {
         
-        var badges: [Badge] = [Badge]()
+        var badges: [BadgeCard] = [BadgeCard]()
         for card in self.cardArray{
-            badges.append(Badge(category: card))
+            badges.append(BadgeCard(category: card))
             
         }
         return badges
@@ -95,10 +101,10 @@ struct K{
     
     static let distortions = [allOrNothing, overGeneralization, mentalFilter, disqualifyPositive, mindReading , fortuneTellerError, magnifyMinimize, emotionalReasoning, shouldStatements, labelingMislabeling,personlization]
     
-    static var distortionBadges: [Badge] {
-        var badges: [Badge] = [Badge]()
+    static var distortionBadges: [BadgeCard] {
+        var badges: [BadgeCard] = [BadgeCard]()
         for card in self.distortions{
-            badges.append(Badge(category: card))
+            badges.append(BadgeCard(category: card))
             
         }
         return badges
