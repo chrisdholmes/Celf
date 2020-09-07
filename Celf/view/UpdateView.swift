@@ -12,6 +12,9 @@ import SwiftUI
  
  UpdateView is a reusable for adding cards to the CardData class.
  
+ TODO
+ - Fix the BadgeInUpdateView parent NavigationLink so the entire view is clickable.
+ - remove the weird background filled in frame behind the symbol or match teh transparency when clicked.
  */
 
 struct UpdateView: View {
@@ -39,7 +42,7 @@ struct UpdateView: View {
                     ForEach(K.distortionBadges){ badge in
                         NavigationLink(destination: EventCardEntryView(category: badge.category)){
                             DistortionInUpdateView(badge: badge)
-                        }.border(Color.black)
+                        }
                         
                     }
                 }

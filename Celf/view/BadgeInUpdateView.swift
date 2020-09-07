@@ -7,7 +7,12 @@
 //
 
 import SwiftUI
-
+/**
+ 
+  BadgeInUpdateView provides a clickable custom button for hteu ser
+ to log the cognitive distortion or the depression combat action they took that
+ day. 
+ */
 struct BadgeInUpdateView: View {
     var badge: Badge
     var body: some View {
@@ -18,16 +23,14 @@ struct BadgeInUpdateView: View {
             .aspectRatio(contentMode: .fit)
             .padding(10)
             .font(.system(size: 32))
-            .border(badge.colorName, width: 3.0)
-            .foregroundColor(Color.white)
-            .background(badge.colorName)
-                .onTapGesture {
-                    print(self.badge.category)
-            }
+                .border(Color.clear, width: 3.0)
+                .foregroundColor(Color.white)
+                .background(Color.clear)
+                
             
             Text(badge.category)
             .foregroundColor(Color.white)
-            .background(badge.colorName, alignment: .bottom)
+                .background(Color.clear, alignment: .bottom)
             .font(.title)
             }.frame(width: 300,height: 300)
             .background(RoundedRectangle(cornerRadius: 20)

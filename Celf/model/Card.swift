@@ -32,7 +32,7 @@ class Card: Identifiable{
         
         return formatter.string(from: today)
     }
-    var entry: JournalEntry = JournalEntry()
+    var notes: String = ""
     
     
 }

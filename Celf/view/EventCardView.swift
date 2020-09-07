@@ -37,7 +37,7 @@ struct EventCardView: View {
             
             JournalEntryView(
                 title: self.eventCard.category,
-                bodyText: self.eventCard.entry.bodyText)
+                bodyText: self.eventCard.notes)
             
         }
         .padding()
@@ -47,8 +47,10 @@ struct EventCardView: View {
 
 struct EventCardView_Previews: PreviewProvider {
     static var previews: some View {
+    
         
         
-        EventCardView(eventCard: EventCard(category: "Meditation"))
+        EventCardView(eventCard: EventCard(category: K.meditation))
     }
 }
+

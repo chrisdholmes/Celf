@@ -17,12 +17,10 @@ struct DistortionInUpdateView: View {
             Text(badge.getCategoryForUpdateView())
                 .bold()
                 .foregroundColor(Color.white)
-                .background(badge.colorName, alignment: .bottom)
+                .background(Color.clear, alignment: .bottom)
                 .font(.title)
                 .multilineTextAlignment(.center)
             
-        }.onTapGesture {
-            print(self.badge.category)
         }.frame(width: 300,height: 300)
         .background(RoundedRectangle(cornerRadius: 20)
             .fill(badge.colorName))

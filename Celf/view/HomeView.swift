@@ -18,10 +18,10 @@ import SwiftUI
  */
 struct HomeView: View {
     
-    var eventCards:[Card]
+    @EnvironmentObject var cardViewManager: CardViewManager
     
     var body: some View {
-        List(eventCards){ card in
+        List(cardViewManager.eventCards){ card in
             
             if(card is DayCard)
             {
@@ -32,17 +32,17 @@ struct HomeView: View {
                 EventCardView(eventCard: card as! EventCard)
             }
             
+        }.onAppear{
+            self.cardViewManager.fetchData()
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     
-    static let cardViewManager = CardViewManager()
-    static let eventCards = cardViewManager.mockData()
     
     static var previews: some View {
-        HomeView(eventCards: eventCards)
+        HomeView()
     }
 }
 

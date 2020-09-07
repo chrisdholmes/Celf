@@ -14,7 +14,7 @@
 import SwiftUI
 
 struct BottomBarView: View {
-       @ObservedObject private var cardViewManager = CardViewManager()
+
     
     var body: some View {
         TabView {
@@ -25,16 +25,14 @@ struct BottomBarView: View {
                 Text("Event")
             }.navigationBarTitle("Update")
             
-            HomeView(eventCards: cardViewManager.eventCards)
+            HomeView()
                 .tabItem {
                     Image(systemName: "house.fill")
                         .font(.system(size: 32))
                     Text("Home")
             }
             .navigationBarTitle("Home")
-            .onAppear {
-                self.cardViewManager.fetchData()
-            }
+      
             
             List{
                 Text("History Screen")

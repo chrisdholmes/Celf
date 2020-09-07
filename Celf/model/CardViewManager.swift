@@ -11,6 +11,8 @@ import Foundation
 class CardViewManager: ObservableObject{
     
     @Published var eventCards = [Card]()
+    @Published var eventCardNotes: String?
+    
     private var cardData: CardData
     
     init()
@@ -21,8 +23,13 @@ class CardViewManager: ObservableObject{
     func fetchData()
     {
         DispatchQueue.main.async {
-            self.eventCards = self.cardData.mockEventCards()
+            self.eventCards = self.cardData.getCards()
         }
+    }
+    
+    func addCard(_ card: EventCard)
+    {
+        cardData.addCard(card)
     }
     
     func mockData() -> [Card]
@@ -30,7 +37,10 @@ class CardViewManager: ObservableObject{
         return cardData.mockEventCards()
     }
     
-   
+    func updateEventCardNotes(notes: String)
+    {
+            self.eventCardNotes = notes
+    }
     
     
 }

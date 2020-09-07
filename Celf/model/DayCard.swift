@@ -18,6 +18,7 @@ class  DayCard: Card{
     // user providers for their day (1 - 5)
     var stars: Int = 0
     var badges = [Badge]()
+    var title: String = ""
     
     
     

@@ -10,6 +10,26 @@ import Foundation
 import UIKit
 import SwiftUI
 
+private let today = Date()
+private let formatter = DateFormatter()
+
+
+extension Date{
+    
+    static var date_mmddyyyy: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        return formatter.string(from: today)
+    }
+    
+    static var time_hhmm: String {
+        formatter.dateFormat = "h:mm a"
+        formatter.amSymbol = "AM"
+        formatter.pmSymbol = "PM"
+        
+        return formatter.string(from: today)
+    }
+}
 
 //MARK: - Colors
 extension Color {
@@ -77,10 +97,13 @@ struct K{
     
     static var distortionBadges: [Badge] {
         var badges: [Badge] = [Badge]()
-               for card in self.distortions{
-                   badges.append(Badge(category: card))
-                   
-               }
-               return badges
+        for card in self.distortions{
+            badges.append(Badge(category: card))
+            
+        }
+        return badges
     }
+    
+    
+    
 }

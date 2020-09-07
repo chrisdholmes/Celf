@@ -66,7 +66,7 @@ struct DayCardView: View {
             Divider()
             //Journal Entry
             
-            JournalEntryView(title: dayCard.entry.title, bodyText: dayCard.entry.bodyText)
+            JournalEntryView(title: dayCard.title, bodyText: dayCard.notes)
             
         }
         .padding()
