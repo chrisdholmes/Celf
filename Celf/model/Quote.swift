@@ -6,6 +6,10 @@
 //  Copyright © 2020 Christopher Holmes. All rights reserved.
 //
 
+/**
+  The Quote struct is design for presenting Quotes to the user at the WelcomeView.
+ */
+
 import Foundation
 
 struct Quote{

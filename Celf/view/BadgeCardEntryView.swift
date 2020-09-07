@@ -82,7 +82,7 @@ struct EntryJournalView: View {
                 
                 print("Entry: " + self.eventJournalEntry)
                
-                let eventCard = EventCard(category: self.category)
+                let eventCard = BadgeCard(category: self.category)
                 
                 eventCard.notes = self.eventJournalEntry
                 

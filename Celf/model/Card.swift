@@ -5,7 +5,10 @@
 //  Created by pancake on 9/2/20.
 //  Copyright © 2020 Christopher Holmes. All rights reserved.
 //
-
+/**
+ Card is the super class of DayCard and BadgeCard. The day has an id, date,
+ time and notes.
+ */
 import Foundation
 
 class Card: Identifiable{
@@ -13,9 +16,7 @@ class Card: Identifiable{
     private let today = Date()
     private let formatter = DateFormatter()
     
-    init() {
-        print("New Card Initialized")
-    }
+
     
     var id: Int {
         return Int(today.timeIntervalSince1970 * 10000000)
@@ -25,6 +26,7 @@ class Card: Identifiable{
         formatter.dateFormat = "MM/dd/yyyy"
         return formatter.string(from: today)
     }
+
     var time: String{
         formatter.dateFormat = "h:mm a"
         formatter.amSymbol = "AM"

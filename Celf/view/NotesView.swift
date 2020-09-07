@@ -14,21 +14,21 @@ import SwiftUI
    all EventCardViews and DayCardViews.
  */
 
-struct JournalEntryView: View {
-    var title: String
-    var bodyText: String
+struct NotesView: View {
+    var category: String
+    var notes: String
     var body: some View {
         
      
             VStack(alignment: .leading){
         
-                Text(title)
+                Text(category)
                     .font(.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
                 ScrollView{
                 
-                Text(bodyText)
+                Text(notes)
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 }.padding(1)
             }.frame(height:200)
@@ -36,4 +36,11 @@ struct JournalEntryView: View {
     
     }
     
+}
+
+struct JournalEntryView_Previews: PreviewProvider {
+    static var previews: some View {
+        NotesView(category: K.meditation, notes: "Visualize the perfect day")
+        
+    }
 }

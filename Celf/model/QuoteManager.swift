@@ -6,6 +6,12 @@
 //  Copyright © 2020 Christopher Holmes. All rights reserved.
 //
 
+/**
+ QuoteManager class has hardedcoded Quote Objects that is randomly returning to the user from an array and a random Integer.
+  In the future, these quotes may include images of the speaker, video/audio of them speaking.
+   
+ */
+
 import Foundation
 
 

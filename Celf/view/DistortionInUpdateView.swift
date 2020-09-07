@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct DistortionInUpdateView: View {
-    var badge: Badge
+    var badge: BadgeCard
   
     var body: some View {
         VStack{

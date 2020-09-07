@@ -9,7 +9,7 @@
 import Foundation
 
 /**
-  A Day Event is a Date,  a star rating, a collection of badges, and a journal entry.
+  A Day Card is a Date,  a star rating, a collection of badges, and a note  about the day..
    
  */
 
@@ -17,9 +17,8 @@ class  DayCard: Card{
     // stars in an int based on the star rating the
     // user providers for their day (1 - 5)
     var stars: Int = 0
-    var badges = [Badge]()
-    var title: String = ""
-    
+    var badges = [BadgeCard]()
+
     
     
 }

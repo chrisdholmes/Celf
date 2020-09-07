@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct BadgeInDayView: View {
-    var badge: Badge
+    var badge: BadgeCard
     
     var body: some View {
         Image(systemName: badge.imageName)
@@ -24,6 +24,6 @@ struct BadgeInDayView: View {
 
 struct BadgeInDayView_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeInDayView(badge: Badge(category: K.conquer))
+        BadgeInDayView(badge: BadgeCard(category: K.conquer))
     }
 }

@@ -5,13 +5,19 @@
 //  Created by pancake on 9/1/20.
 //  Copyright © 2020 Christopher Holmes. All rights reserved.
 //
-
+/**
+ 
+ The CardView Manager is the class that is sitting between the View and the Model.
+ It's pulling data from the model and publishing it to the view.
+ TODO
+ - crud operations
+ */
 import Foundation
 
 class CardViewManager: ObservableObject{
     
-    @Published var eventCards = [Card]()
-    @Published var eventCardNotes: String?
+    @Published var cards = [Card]()
+    
     
     private var cardData: CardData
     
@@ -23,24 +29,22 @@ class CardViewManager: ObservableObject{
     func fetchData()
     {
         DispatchQueue.main.async {
-            self.eventCards = self.cardData.getCards()
+            self.cards = self.cardData.getCards()
         }
     }
     
-    func addCard(_ card: EventCard)
+    func addCard(_ card: BadgeCard)
     {
         cardData.addCard(card)
     }
     
-    func mockData() -> [Card]
+    func mockData()
     {
-        return cardData.mockEventCards()
+        DispatchQueue.main.async {
+            self.cards = self.cardData.mockCards()
+        }
     }
     
-    func updateEventCardNotes(notes: String)
-    {
-            self.eventCardNotes = notes
-    }
     
     
 }

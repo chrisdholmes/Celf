@@ -21,15 +21,15 @@ struct HomeView: View {
     @EnvironmentObject var cardViewManager: CardViewManager
     
     var body: some View {
-        List(cardViewManager.eventCards){ card in
+        List(cardViewManager.cards){ card in
             
             if(card is DayCard)
             {
                 DayCardView(dayCard: card as! DayCard)
             }
-            else if(card is EventCard)
+            else if(card is BadgeCard)
             {
-                EventCardView(eventCard: card as! EventCard)
+                BadgeCardView(badgeCard: card as! BadgeCard)
             }
             
         }.onAppear{

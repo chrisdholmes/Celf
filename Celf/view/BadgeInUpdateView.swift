@@ -9,12 +9,12 @@
 import SwiftUI
 /**
  
-  BadgeInUpdateView provides a clickable custom button for hteu ser
+  BadgeInUpdateView provides a clickable custom button for the user
  to log the cognitive distortion or the depression combat action they took that
  day. 
  */
 struct BadgeInUpdateView: View {
-    var badge: Badge
+    var badge: BadgeCard
     var body: some View {
         
         VStack{
@@ -42,6 +42,6 @@ struct BadgeInUpdateView: View {
 
 struct BadgeInUpdateView_Previews: PreviewProvider {
     static var previews: some View {
-        BadgeInUpdateView(badge: Badge(category: K.conquer))
+        BadgeInUpdateView(badge: BadgeCard(category: K.conquer))
     }
 }
