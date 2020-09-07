@@ -25,28 +25,24 @@ import SwiftUI
 
 struct DayCardView: View {
     
+    @State private var rating: Int = 0
     var dayCard: DayCard
+    
     
     var body: some View {
         
         VStack{
             HStack{
+                
                 VStack{
-                    // date
+                    Text(Date.dayOfWeek)
                     Text(dayCard.date)
                 }
                 
                 Spacer()
-                HStack{
-                    //number of stars
-                    //needs to be 5 stars total
-                    // some will be empty
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                    Image(systemName: "star.fill")
-                }
+                //RatingView gives user option to rate
+                // their day from 1 to 5 stars
+                RatingView(rating: $rating)
             }
             
             Divider()
@@ -55,7 +51,8 @@ struct DayCardView: View {
             ScrollView(.horizontal)
             {
                 HStack{
-                    //journal badge
+                    //display each BadgeCard added to the
+                    // DayCard object in a list.
                     ForEach(0..<dayCard.badges.count){ badge in
                         BadgeInDayView(badge: self.dayCard.badges[badge])
                     }
@@ -66,7 +63,7 @@ struct DayCardView: View {
             Divider()
             //Journal Entry
             
-            JournalEntryView(title: dayCard.title, bodyText: dayCard.notes)
+            NotesView(category: "", notes: dayCard.notes)
             
         }
         .padding()
@@ -88,3 +85,38 @@ struct DayEventView_Previews: PreviewProvider {
 
 
 
+/**
+ Rating View is for the user to rate their day based on a 5 star rating system.
+  TODO
+ - test out different star colors
+ - test out different icons and stuff
+  
+ */
+struct RatingView: View {
+    @Binding var rating: Int
+    var offImage: Image?
+    var onImage = Image(systemName: "star.fill")
+    var offColor = Color.gray
+    var onColor = Color.yellow
+    var body: some View {
+        
+        //number of stars
+        //needs to be 5 stars total
+        // some will be empty
+        ForEach(1..<5 + 1) { number in
+            self.image(for: number)
+                .foregroundColor(number > self.rating ? self.offColor : self.onColor)
+                .onTapGesture {
+                    self.rating = number
+            }
+        }
+        
+    }
+    
+    func image(for number: Int) -> Image {
+        if number > rating {
+            return offImage ?? onImage
+        } else {
+            return onImage
+        }
+    }}
