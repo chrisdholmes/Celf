@@ -8,9 +8,9 @@
 
 import Foundation
 /**
- Not sure if I need a badge class for the badges as the badgeName
- is just a string at this time. In the future I may need an actual badge class
- if the badges become more complicated.
+   The BadgeCard represents  a log that the user has submitted regarding their day.
+    A Badge can be a Cognitive Distortion or a Healthy Activity that the user performed
+     to improve their mental health. 
  
  
  */
@@ -18,13 +18,15 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct Badge: Identifiable{
+class BadgeCard: Card{
     
-    var id: Int {
-        let date = Date()
-        return Int(date.timeIntervalSince1970 * 10000000)
+    var category: String = ""
+    
+    
+    init(category: String)
+    {
+        self.category = category
     }
-    let category: String
     //TODO use K.constants to update the colorName instead of
     // using this right here - this is not that good.
     var colorName: Color{
@@ -49,6 +51,9 @@ struct Badge: Identifiable{
         case K.talk: result = "person.circle";
         case K.exercise: result = "heart.circle";
         case K.conquer: result = "bolt.circle";
+        case K.magnifyMinimize: result = "magnifyingglass.circle";
+        case K.mentalFilter: result = "line.horizontal.3.decrease.circle";
+        
         default: result = "d.circle"
         }
         
